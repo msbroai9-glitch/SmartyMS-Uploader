@@ -192,7 +192,7 @@ async def txt_handler(bot: Client, m: Message):
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
-    if raw_text0 == '/ms':
+    if raw_text0 == '/up':
         b_name = file_name
     else:
         b_name = raw_text0
@@ -219,11 +219,11 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your Name or send '/Baby' for use default.🌚\n Eg :@Lapata_786 **")
+    await editable.edit("**Enter Your Name or send '/Mahi' for use default.🌚\n Eg :@Lapata_786 **")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
-    if raw_text3 == '/Baby':
+    if raw_text3 == '/Mahi':
         CR = credit
     else:
         CR = raw_text3
